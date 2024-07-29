@@ -22,7 +22,6 @@ import { useState, useEffect } from 'react';
     }, [feedbacks]);
 
     const updateFeedback = (feedbackType) => {
-    console.log("click", feedbackType);
     setFeedbacks({
       ...feedbacks,
       [feedbackType]: feedbacks[feedbackType] + 1
